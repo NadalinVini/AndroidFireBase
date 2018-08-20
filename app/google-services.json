@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "521269498871",
+    "firebase_url": "https://nadalin-project.firebaseio.com",
+    "project_id": "nadalin-project",
+    "storage_bucket": "nadalin-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521269498871:android:6bbc26446929d5c9",
+        "android_client_info": {
+          "package_name": "com.example.opet.i7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521269498871-4g0gri5ag6shk9taqdkd1r1m7g1dvd7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.opet.i7",
+            "certificate_hash": "df38f8340bda29a2a061e7126a30da7f5f323891"
+          }
+        },
+        {
+          "client_id": "521269498871-bk4ff2rte9jkvdv971he6nh1k46lo8k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjpzKHvEcRcu92MynFlHnwHQkPsdn15To"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521269498871-bk4ff2rte9jkvdv971he6nh1k46lo8k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
