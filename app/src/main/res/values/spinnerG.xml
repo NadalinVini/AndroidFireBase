@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gradu_prompt">Escolha sua Graduação</string>
+
+    <string-array name="SpinnerG">
+        <item>Básico</item>
+        <item>Médio</item>
+        <item>Graduação</item>
+        <item>Pós</item>
+    </string-array>
+</resources>
