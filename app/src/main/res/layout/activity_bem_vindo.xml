@@ -19,30 +19,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="Data de nascimento"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <CalendarView
-        android:id="@+id/Calendar"
+    <EditText
+        android:id="@+id/TextEmail"
+        android:hint="Email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></CalendarView>
+        android:layout_height="wrap_content" />
 
-    <Spinner
-        android:id="@+id/spinner1"
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imgSelected"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/SpinnerG"
-        android:prompt="@string/gradu_prompt" />
+        android:text="Foto para Registro"/>
 
     <Button
-        android:id="@+id/buttonB"
-        android:onClick="RegistrarDados"
-        android:text="Registrar dados particulares"
+        android:onClick="photoPickerFunction"
+        android:id="@+id/btnFoto"
+        android:text="Selecionar Foto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
+    <Button
+        android:onClick="sendPhotoFunction"
+        android:id="@+id/btnEnviar"
+        android:text="Enviar Registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

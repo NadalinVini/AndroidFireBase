@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidFireBase-master.iml" filepath="$PROJECT_DIR$/AndroidFireBase-master.iml" />
+      <module fileurl="file://C:\Users\User\Documents\GitHub\AndroidFireBase-master\AndroidFireBase-master.iml" filepath="C:\Users\User\Documents\GitHub\AndroidFireBase-master\AndroidFireBase-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\opet\Downloads\AndroidFireBase-master\app\app.iml" filepath="C:\Users\opet\Downloads\AndroidFireBase-master\app\app.iml" />
+      <module fileurl="file://C:\Users\User\Documents\GitHub\AndroidFireBase-master\app\app.iml" filepath="C:\Users\User\Documents\GitHub\AndroidFireBase-master\app\app.iml" />
       <module fileurl="file://C:\Users\opet\Downloads\AndroidFireBase-master\i7.iml" filepath="C:\Users\opet\Downloads\AndroidFireBase-master\i7.iml" />
     </modules>
   </component>

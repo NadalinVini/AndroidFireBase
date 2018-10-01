@@ -31,6 +31,14 @@
           }
         },
         {
+          "client_id": "521269498871-rftmr85qjcg04qe3rqcaj8k0ubep1clp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.opet.i7",
+            "certificate_hash": "0c0841b938176d9840d79234d6432760b77a90e4"
+          }
+        },
+        {
           "client_id": "521269498871-bk4ff2rte9jkvdv971he6nh1k46lo8k6.apps.googleusercontent.com",
           "client_type": 3
         }
