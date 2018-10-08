@@ -30,7 +30,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".BemVindo" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".TrucoActivity"></activity>
+        <activity android:name=".TrucoActivity" />
+        <activity android:name=".HistoricoTrucoActivity"></activity>
     </application>
 
 </manifest>

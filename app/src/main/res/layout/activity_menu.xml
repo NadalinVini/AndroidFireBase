@@ -14,6 +14,12 @@
         android:text="Jogar"/>
 
     <Button
+        android:onClick="telaHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Histórico de Partidas" />
+
+    <Button
         android:onClick="telaBemVindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

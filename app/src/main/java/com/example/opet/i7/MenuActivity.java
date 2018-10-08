@@ -29,4 +29,9 @@ public class MenuActivity extends Activity {
         Intent intent = new Intent(MenuActivity.this, BemVindo.class);
         startActivity(intent);
     }
+
+    public void telaHistorico(View view){
+        Intent intent = new Intent(MenuActivity.this, HistoricoTrucoActivity.class);
+        startActivity(intent);
+    }
 }
