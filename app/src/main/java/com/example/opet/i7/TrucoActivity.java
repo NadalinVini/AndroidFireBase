@@ -176,9 +176,12 @@ public class TrucoActivity extends Activity {
         if(valorPartida == 1) {
             valorPartida = valorPartida + 2;
             btnTruco.setText("6");
-        } else if(valorPartida == 3 || valorPartida == 6 || valorPartida == 9){
+        } else if(valorPartida == 3 || valorPartida == 6){
             valorPartida = valorPartida + 3;
-            btnTruco.setText(String.valueOf(valorPartida + 3).toString());
+            btnTruco.setText(String.valueOf(valorPartida + 3));
+        } else if(valorPartida == 9){
+            valorPartida = valorPartida + 3;
+            btnTruco.setText("Brinca não!!!");
         } else{
             Toast.makeText(TrucoActivity.this, "Impossível aumentar o valor da partida.", Toast.LENGTH_SHORT).show();
         }
