@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 
     public void Logar (View view)
     {
-        String sLogin =editLogin.getText().toString();
+        String sLogin = editLogin.getText().toString();
         String sSenha = editSenha.getText().toString();
 
         mAuth.signInWithEmailAndPassword(sLogin, sSenha)
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Logado Sucesso", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(MainActivity.this, BemVindo.class);
+                            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                             startActivity(intent);
                         }
                         else

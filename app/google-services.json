@@ -1,51 +1,43 @@
 {
   "project_info": {
-    "project_number": "521269498871",
-    "firebase_url": "https://nadalin-project.firebaseio.com",
-    "project_id": "nadalin-project",
-    "storage_bucket": "nadalin-project.appspot.com"
+    "project_number": "368019265789",
+    "firebase_url": "https://plantsimulator-af749.firebaseio.com",
+    "project_id": "plantsimulator-af749",
+    "storage_bucket": "plantsimulator-af749.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:521269498871:android:6bbc26446929d5c9",
+        "mobilesdk_app_id": "1:368019265789:android:6bbc26446929d5c9",
         "android_client_info": {
           "package_name": "com.example.opet.i7"
         }
       },
       "oauth_client": [
         {
-          "client_id": "521269498871-4g0gri5ag6shk9taqdkd1r1m7g1dvd7a.apps.googleusercontent.com",
+          "client_id": "368019265789-imu81b9a9eqv3vln2najbns07coo1tqq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.opet.i7",
-            "certificate_hash": "df38f8340bda29a2a061e7126a30da7f5f323891"
+            "certificate_hash": "b6dd6c706725874b6348604d9ed831b41bd9d290"
           }
         },
         {
-          "client_id": "521269498871-1glcht8qh5d7i3up2p9germufnhvmjg4.apps.googleusercontent.com",
+          "client_id": "368019265789-oa82m1ko8g38i8l3huelect8vt56lu80.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.opet.i7",
-            "certificate_hash": "1db0871e8caf3e34c5e4b4fd63670a4850997266"
+            "certificate_hash": "813b97fbb8aedfe8ec74be0e136e1dadf680e269"
           }
         },
         {
-          "client_id": "521269498871-rftmr85qjcg04qe3rqcaj8k0ubep1clp.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.opet.i7",
-            "certificate_hash": "0c0841b938176d9840d79234d6432760b77a90e4"
-          }
-        },
-        {
-          "client_id": "521269498871-bk4ff2rte9jkvdv971he6nh1k46lo8k6.apps.googleusercontent.com",
+          "client_id": "368019265789-ki6l9jaukuvf533dbmn9l22gl14thfol.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCjpzKHvEcRcu92MynFlHnwHQkPsdn15To"
+          "current_key": "AIzaSyDa762bdDnnJAiE7_LejY8Hdp_sjw66Sk4"
         }
       ],
       "services": {
@@ -56,7 +48,83 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "521269498871-bk4ff2rte9jkvdv971he6nh1k46lo8k6.apps.googleusercontent.com",
+              "client_id": "368019265789-ki6l9jaukuvf533dbmn9l22gl14thfol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368019265789:android:3cd5ffc2c15ea7de",
+        "android_client_info": {
+          "package_name": "plantsimulator.org.plantsimulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368019265789-c6kprvkatdlpuf4tkno340ogd7j67lfp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plantsimulator.org.plantsimulator",
+            "certificate_hash": "37de49f212a9a33d5a2b06180d92abc3a4fb102f"
+          }
+        },
+        {
+          "client_id": "368019265789-a3koel3q2j8rkguh1ic28jtjvjtq698h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plantsimulator.org.plantsimulator",
+            "certificate_hash": "cd47348bd0612b5a75f54ceb7ee772e0d15021f4"
+          }
+        },
+        {
+          "client_id": "368019265789-3ihgudl11otifdlcdpu8n6l9h1fojfv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plantsimulator.org.plantsimulator",
+            "certificate_hash": "26c9168474496b8d023e7226bd9514ee0b3b9699"
+          }
+        },
+        {
+          "client_id": "368019265789-8kkujkqglesj5repg6ak120im6gtnjnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plantsimulator.org.plantsimulator",
+            "certificate_hash": "7f70d0e2603396b4d2b451fb81874d74af7c3166"
+          }
+        },
+        {
+          "client_id": "368019265789-0nnhi2jlk79kkfjmsn00omb9psiou77q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plantsimulator.org.plantsimulator",
+            "certificate_hash": "b6dd6c706725874b6348604d9ed831b41bd9d290"
+          }
+        },
+        {
+          "client_id": "368019265789-ki6l9jaukuvf533dbmn9l22gl14thfol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa762bdDnnJAiE7_LejY8Hdp_sjw66Sk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368019265789-ki6l9jaukuvf533dbmn9l22gl14thfol.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

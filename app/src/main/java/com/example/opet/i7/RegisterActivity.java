@@ -40,15 +40,15 @@ public class RegisterActivity extends Activity {
         @Override
         public void onComplete(@NonNull Task<AuthResult> task) {
             if (task.isSuccessful()) {
-                Toast.makeText(RegisterActivity.this, "Registrado, Pau no cu", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterActivity.this, BemVindo.class);
+                Toast.makeText(RegisterActivity.this, "Registrado", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RegisterActivity.this, MenuActivity.class);
                 startActivity(intent);
                 /**/
 
             }
             else
             {
-                Toast.makeText(RegisterActivity.this, "Escreve certo ae FDP", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, "Escreve certo ae ", Toast.LENGTH_SHORT).show();
             }
         }
     });
