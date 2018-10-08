@@ -33,7 +33,6 @@ public class TrucoActivity extends Activity {
     private Button btnTruco;
 
     private String uid;
-
     private int valorPartida;
 
     private FirebaseAuth mAuth;
