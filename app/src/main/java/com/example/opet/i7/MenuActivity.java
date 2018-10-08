@@ -1,5 +1,6 @@
 package com.example.opet.i7;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
