@@ -48,11 +48,15 @@ public class HistoricoTrucoActivity extends Activity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
+        textEmail = findViewById(R.id.textEmail);
+
         if (currentUser != null) {
             uid = currentUser.getUid().toString();
+            String email = currentUser.getEmail();
+
+            textEmail.setText("Bem vindo " + email);
         }
 
-        textEmail = findViewById(R.id.textEmail);
         btnAtualizar = findViewById(R.id.btnAtualizar);
         btnAtualizar = findViewById(R.id.btnMenu);
         mList = findViewById(R.id.mList);
