@@ -40,12 +40,10 @@ public class PartidaAdapter extends ArrayAdapter<Partida> {
 
         TextView textJogador1 = mView.findViewById(R.id.textJogador1);
         TextView textJogador2 = mView.findViewById(R.id.textJogador2);
-        TextView textId = mView.findViewById(R.id.textId);
         TextView textResultado = mView.findViewById(R.id.textResultado);
 
         textJogador1.setText(partida.getJogador1());
         textJogador2.setText(partida.getJogador2());
-        textId.setText(partida.getId());
 
         if(partida.isVitoria() == true)
             textResultado.setText("Sim");
