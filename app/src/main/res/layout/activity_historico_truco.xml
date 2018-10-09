@@ -24,12 +24,14 @@
 
     <Button
         android:id="@+id/btnAtualizar"
+        android:onClick="atualizarHistorico"
         android:text="Atualizar histórico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnMenu"
+        android:onClick="voltarMenu"
         android:text="Menu inicial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

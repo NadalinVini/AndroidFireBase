@@ -3,18 +3,23 @@ package com.example.opet.i7;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.opet.i7.model.Partida;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.sql.Timestamp;
+import java.util.Random;
 
 public class TrucoActivity extends Activity {
 
@@ -97,7 +102,7 @@ public class TrucoActivity extends Activity {
             if(Integer.parseInt(ponto) >= 12){
                 textResultado.setText("Jogador 1 Venceu!!!");
 
-                /* Salvar no banco no nó do usuário que está logado: .child(uid)
+                /* Salvar no banco
                     variáveis:
                         Nome do jogador 1 (que está logado) = textJogador1
                         Nome do jogador 2 (que foi editado o nome durante a partida) = textJogador2
@@ -105,6 +110,19 @@ public class TrucoActivity extends Activity {
                         Identificador da partida (definido abaixo) = timeStamp
                 */
                 long timeStamp = new Timestamp(System.currentTimeMillis()).getTime();
+
+                Random gerador = new Random();
+                Integer numero = gerador.nextInt();
+
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                Partida partida = new Partida();
+                partida.setId(user.getUid());
+                partida.setJogador1(textJogador1.getText().toString());
+                partida.setJogador2(textJogador2.getText().toString());
+                partida.setVitoria(true);
+
+                salvarPartida(partida, timeStamp);
 
                 // Teste do timestamp
                 Toast.makeText(TrucoActivity.this, String.valueOf(timeStamp), Toast.LENGTH_SHORT).show();
@@ -149,7 +167,7 @@ public class TrucoActivity extends Activity {
             if(Integer.parseInt(ponto) >= 12){
                 textResultado.setText("Jogador 2 Venceu!!!");
 
-                /* Salvar no banco no nó do usuário que está logado: .child(uid)
+                /* Salvar no banco
                     variáveis:
                         Nome do jogador 1 (que está logado) = textJogador1
                         Nome do jogador 2 (que foi editado o nome durante a partida) = textJogador2
@@ -157,6 +175,19 @@ public class TrucoActivity extends Activity {
                         Identificador da partida (definido abaixo) = timeStamp
                 */
                 long timeStamp = new Timestamp(System.currentTimeMillis()).getTime();
+
+                Random gerador = new Random();
+                Integer numero = gerador.nextInt();
+
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                Partida partida = new Partida();
+                partida.setId(user.getUid());
+                partida.setJogador1(textJogador1.getText().toString());
+                partida.setJogador2(textJogador2.getText().toString());
+                partida.setVitoria(true);
+
+                salvarPartida(partida, timeStamp);
 
                 // Teste do timestamp
                 Toast.makeText(TrucoActivity.this, String.valueOf(timeStamp), Toast.LENGTH_SHORT).show();
@@ -200,5 +231,21 @@ public class TrucoActivity extends Activity {
     public void voltarMenu(View view) {
         Intent intent = new Intent(TrucoActivity.this, MenuActivity.class);
         startActivity(intent);
+    }
+
+    private void salvarPartida(Partida partida, Long timeStamp) {
+        mDatabase.child("partidas").child(String.valueOf(timeStamp)).setValue(partida)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(TrucoActivity.this, "Partida Salva!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(TrucoActivity.this, "Erro ao Salvar a partida ", Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }

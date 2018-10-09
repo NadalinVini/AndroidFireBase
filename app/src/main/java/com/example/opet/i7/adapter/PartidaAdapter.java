@@ -45,7 +45,7 @@ public class PartidaAdapter extends ArrayAdapter<Partida> {
 
         textJogador1.setText(partida.getJogador1());
         textJogador2.setText(partida.getJogador2());
-        textId.setText("Timestamp: " + partida.getId());
+        textId.setText(partida.getId());
 
         if(partida.isVitoria() == true)
             textResultado.setText("Sim");

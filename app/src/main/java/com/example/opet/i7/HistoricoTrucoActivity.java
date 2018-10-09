@@ -1,9 +1,11 @@
 package com.example.opet.i7;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -87,7 +89,7 @@ public class HistoricoTrucoActivity extends Activity {
                     partidas.add(partidaSnapshot.getValue(Partida.class));
                 }
 
-                ArrayAdapter<String> adapter = new PartidaAdapter(this,R.layout.partida_item,partidas);
+                ArrayAdapter<Partida> adapter = new PartidaAdapter(HistoricoTrucoActivity.this,R.layout.partida_item,partidas);
 
                 mList.setAdapter(adapter);
                 progressPartidas.setVisibility(ProgressBar.GONE);
@@ -100,7 +102,14 @@ public class HistoricoTrucoActivity extends Activity {
         });
     }
 
+    public void voltarMenu(View view) {
+        Intent intent = new Intent(HistoricoTrucoActivity.this, MenuActivity.class);
+        startActivity(intent);
+    }
 
+    public void atualizarHistorico(View view){
+        carregarPartidas();
+    }
 
 
 }
