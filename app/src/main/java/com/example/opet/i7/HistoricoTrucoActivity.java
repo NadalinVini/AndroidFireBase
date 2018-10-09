@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.opet.i7.adapter.PartidaAdapter;
 import com.example.opet.i7.model.Partida;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -71,7 +72,7 @@ public class HistoricoTrucoActivity extends Activity {
     }
 
     public void carregarPartidas(){
-        Query mQuery = mDatabase.child("users").child(uid).child("partida").orderByChild("id")
+        Query mQuery = mDatabase.child("partidas").orderByChild("id")
                 .limitToFirst(50);
 
         mQuery.addValueEventListener(new ValueEventListener() {
@@ -82,15 +83,11 @@ public class HistoricoTrucoActivity extends Activity {
 
                 progressPartidas.setVisibility(ProgressBar.VISIBLE);
 
-                for(DataSnapshot livroSnapshot : dataSnapshot.getChildren()){
-                    partidas.add(livroSnapshot.getValue(Partida.class));
+                for(DataSnapshot partidaSnapshot : dataSnapshot.getChildren()){
+                    partidas.add(partidaSnapshot.getValue(Partida.class));
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(HistoricoTrucoActivity.this,android.R.layout.simple_list_item_1,android.R.id.text1);
-
-                for(Partida l: partidas){
-                    adapter.add(l.getId());
-                }
+                ArrayAdapter<String> adapter = new PartidaAdapter(this,R.layout.partida_item,partidas);
 
                 mList.setAdapter(adapter);
                 progressPartidas.setVisibility(ProgressBar.GONE);

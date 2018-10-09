@@ -1,9 +1,5 @@
 package com.example.opet.i7.model;
 
-/**
- * Created by opet on 08/10/2018.
- */
-
 public class Partida {
     private String id;
     private String jogador1;
